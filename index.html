@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrata tu nube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Elige la tarifa que más te conviene</h1>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Basic</h2>
+            <p>Disfruta de la nube al mejor precio</p>
+            <p class="precio">9,90€/mes</p>
+            <button onclick="selectPlan('Basic')">Seleccionar</button>
+        </div>
+    
+        <div class="card" id="card2">
+            <h2>Premium</h2>
+            <p>Disfruta de tu nube al completo</p>
+            <p class="precio">19,90€/mes</p>
+            <button onclick="selectPlan('Premium')">Seleccionar</button>
+        </div>
+        <div class="card" id="card3">
+            <h2>Family</h2>
+            <p>Hasta 4 familiares con el mejor seguro</p>
+            <p class="precio">39,90€/mes</p>
+            <button onclick="selectPlan('Family')">Seleccionar</button>
+        </div>
+    </div>
+    <div class="summary">
+        <div class="summary-item">
+            <p>Memoria </p>
+            <div class="line" id="memoria-line"></div>
+        </div>
+        <div class="summary-item">
+            <p>Usuarios </p>
+            <div class="line" id="usuarios-line"></div>
+        </div>
+        <div class="summary-item">
+            <p>Velocidad</p>
+            <div class="line" id="velocidad-line"></div>
+        </div>
+        <div class="summary-item">
+            <p>Cobertura</p>
+            <div class="line" id="cobertura-line"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
