@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Paso 1: Animación secuenciada
     anime.timeline({loop: false})
         .add({
             targets: '#card1',
